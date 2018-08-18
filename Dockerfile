@@ -8,5 +8,5 @@ RUN apk update && \
     php7-intl php7-bcmath php7-dom php7-mbstring php7-xmlreader mysql-client curl && apk add -u musl && \
     rm -rf /var/cache/apk/*
 
-#   -F  -- Force to stay in Foreground ie no deamonize
+#   -F  -- Force to stay in Foreground ie no deamonize 
 CMD ["/usr/sbin/php-fpm7", "-F"]
